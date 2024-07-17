@@ -51,11 +51,11 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-# ALLOWED_HOSTS = [
-#     "184.72.15.174",
-#     "localhost",
-#     "127.0.0.1",
-# ]
+ALLOWED_HOSTS = [
+    "184.72.15.174",
+    "localhost",
+    "127.0.0.1",
+]
 
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:5173",
