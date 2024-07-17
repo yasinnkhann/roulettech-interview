@@ -49,7 +49,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 ALLOWED_HOSTS = [
     "184.72.15.174",
@@ -61,34 +61,6 @@ ALLOWED_HOSTS = [
 #     "http://localhost:5173",
 #     "http://roulettech-yk.s3-website-us-west-1.amazonaws.com",
 # ]
-
-CORS_ALLOW_ALL_ORIGINS = True
-
-CORS_ALLOW_METHODS = [
-    "GET",
-    "POST",
-    "PUT",
-    "PATCH",
-    "DELETE",
-    "OPTIONS",
-]
-
-# Allow specific headers
-CORS_ALLOW_HEADERS = [
-    "content-type",
-    "authorization",
-    "x-requested-with",
-    # Add other headers as needed
-]
-
-# Optionally, expose specific headers
-CORS_EXPOSE_HEADERS = [
-    "content-length",
-    "content-type",
-]
-
-# Optionally, allow credentials
-CORS_ALLOW_CREDENTIALS = True
 
 
 ROOT_URLCONF = "roulettech.urls"
