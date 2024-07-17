@@ -22,7 +22,14 @@ function App() {
 				url += `&gender=${gender}`;
 			}
 
-			const res = await fetch(url);
+			// const res = await fetch(url);
+			const res = await fetch(url, {
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				credentials: 'include',
+			});
 			const { results: users } = await res.json();
 			setUsers(users);
 		} catch (err) {
@@ -53,7 +60,7 @@ function App() {
 
 	useEffect(() => {
 		getUsers(gender, page);
-		getCountries();
+		// getCountries();
 	}, [page, gender]);
 
 	return (

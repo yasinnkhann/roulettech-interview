@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-2d98$wd2b50+vmb=e=z0=fq58+iaf32$mpoa)7aes42=&u08&3"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Application definition
 
@@ -51,16 +51,44 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-ALLOWED_HOSTS = [
-    "184.72.15.174",
-    "localhost",
-    "127.0.0.1",
-]
+# ALLOWED_HOSTS = [
+#     "184.72.15.174",
+#     "localhost",
+#     "127.0.0.1",
+# ]
 
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:5173",
 #     "http://roulettech-yk.s3-website-us-west-1.amazonaws.com",
 # ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE",
+    "OPTIONS",
+]
+
+# Allow specific headers
+CORS_ALLOW_HEADERS = [
+    "content-type",
+    "authorization",
+    "x-requested-with",
+    # Add other headers as needed
+]
+
+# Optionally, expose specific headers
+CORS_EXPOSE_HEADERS = [
+    "content-length",
+    "content-type",
+]
+
+# Optionally, allow credentials
+CORS_ALLOW_CREDENTIALS = True
 
 
 ROOT_URLCONF = "roulettech.urls"
