@@ -6,7 +6,6 @@ from rest_framework import status
 
 @api_view(["GET"])
 def get_users(request):
-    MAX_USERS_LIMIT = 20
     gender = request.GET.get("gender", None)
     page = request.GET.get("page", 1)
     users_count = request.GET.get("users_count", 5)
