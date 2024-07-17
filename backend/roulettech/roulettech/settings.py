@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from corsheaders.defaults import default_headers
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -122,7 +123,7 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = True
 
 ALLOWED_HOSTS = [
     "184.72.15.174",
@@ -130,7 +131,9 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://roulettech-yk.s3-website-us-west-1.amazonaws.com",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:5173",
+#     "http://roulettech-yk.s3-website-us-west-1.amazonaws.com",
+# ]
+
+CORS_ALLOW_HEADERS = default_headers + ("Access-Control-Allow-Origin",)
