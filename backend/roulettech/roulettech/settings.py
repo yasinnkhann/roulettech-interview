@@ -54,6 +54,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "http://roulettech-yk.s3-website-us-west-1.amazonaws.com",
 ]
 
 ROOT_URLCONF = "roulettech.urls"
