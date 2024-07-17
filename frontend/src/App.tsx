@@ -60,7 +60,7 @@ function App() {
 
 	useEffect(() => {
 		getUsers(gender, page);
-		// getCountries();
+		getCountries();
 	}, [page, gender]);
 
 	return (
