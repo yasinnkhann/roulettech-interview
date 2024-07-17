@@ -27,7 +27,12 @@ DEBUG = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-ALLOWED_HOSTS = ["184.72.15.174", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "184.72.15.174",
+    "localhost",
+    "127.0.0.1",
+    "http://roulettech-yk.s3-website-us-west-1.amazonaws.com",
+]
 
 
 # Application definition
