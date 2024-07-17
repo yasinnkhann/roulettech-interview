@@ -1,0 +1,12 @@
+.error {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #d9534f; /* Bootstrap danger color */
+	padding: 20px;
+	border: 1px solid #d9534f;
+	border-radius: 5px;
+	background-color: #f2dede; /* Light background for visibility */
+}

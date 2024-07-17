@@ -1,0 +1,8 @@
+.users {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px; /* Adjust the gap between cards as needed */
+	padding: 20px; /* Optional: add padding to the container */
+}
